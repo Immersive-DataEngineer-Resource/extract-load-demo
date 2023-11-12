@@ -1,4 +1,5 @@
 from google.cloud import storage
+import os
 
 
 def write_to_gcs(bucket_name, blob_name, data):
@@ -8,6 +9,6 @@ def write_to_gcs(bucket_name, blob_name, data):
     blob.upload_from_string(data)
 
 
-bucket_name = 'your-bucket-name'
-blob_name = 'your-blob-name'
-write_to_gcs(bucket_name, blob_name, 'some-data')
+bucket_name = os.getenv('BUCKET_NAME')
+blob_name = 'test.json'
+write_to_gcs(bucket_name, blob_name, '{"name": "test"}')

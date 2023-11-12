@@ -1,4 +1,5 @@
 from google.cloud import storage
+import os
 
 
 def read_from_gcs(bucket_name, blob_name):
@@ -8,6 +9,7 @@ def read_from_gcs(bucket_name, blob_name):
     return blob.download_as_text()
 
 
-bucket_name = 'your-bucket-name'
-blob_name = 'your-blob-name'
+bucket_name = os.getenv('BUCKET_NAME')
+blob_name = 'test.json'
 data = read_from_gcs(bucket_name, blob_name)
+print(data)
