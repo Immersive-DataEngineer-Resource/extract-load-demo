@@ -194,3 +194,11 @@ gcloud composer environments storage dags import \
     --location asia-southeast1 \
     --source="cloud-composer/insert.py"
 ```
+
+The DAG should be uploaded.
+
+![](_images/cloud-composer-upload-dag.png)o
+
+And it should work correctly
+
+![](_images/cloud-composer-dag-is-running.png)
