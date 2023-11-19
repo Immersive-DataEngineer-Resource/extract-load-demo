@@ -2,7 +2,9 @@
 
 ## Run Airbyte via Docker
 
-- Execute the command below to run airbyte server via docker-compose. This `sh` file will setup airbyte installation, download its dependencies and make sure the airbyte is running.
+- Execute the command below to run airbyte server via [docker-compose](https://github.com/Immersive-DataEngineer-Resource/ingestion-data/tree/main/ingestion_airbyte) or download the airbyte docker-compose from the [documentation](https://docs.airbyte.com/quickstart/deploy-airbyte). 
+
+- This `sh` file will setup airbyte installation, download its dependencies and make sure the airbyte is running.
 
 ```
 ./run-ab-platform.sh
@@ -36,7 +38,7 @@ password: password
 
 ## Create Source in Airbyte
 
-![create-source](./_images/airbyte__create_destination.png)
+![create-source](./_images/airbyte__create_source.png)
 
 
 ## Create Destination in Airbyte
