@@ -93,7 +93,7 @@ CREATE TABLE `my_dataset.my_table` (
 
 ## Using Python to Insert Data
 
-> __ Warning:__ The following section assuem you already installed `gooogle-cloud-bigquery`. You don't need to do anything if you already activate the virtual environment and install packages from `requirements.txt`
+> __Warning:__ The following section assume you already installed `gooogle-cloud-bigquery`. You don't need to do anything if you already activate the virtual environment and install packages from `requirements.txt`
 
 ```bash
 export PROJECT_ID=xxx-xxx-xxx
@@ -129,10 +129,11 @@ Let's first make a bucket. Notice that the name of your bucket has to be globall
 
 ## Using Python to Upload Data
 
-> __ Warning:__ The following section assuem you already installed `gooogle-cloud-storage`. You don't need to do anything if you already activate the virtual environment and install packages from `requirements.txt`
+> __Warning:__ The following section assume you already installed `gooogle-cloud-storage`. You don't need to do anything if you already activate the virtual environment and install packages from `requirements.txt`
 
 ```bash
 export PROJECT_ID=xxx-xxx-xxx
+export BUCKET_NAME=xxx-xxx-xxx-bucket
 python gcs load.py
 ```
 
@@ -143,6 +144,7 @@ See [gcs/load.py](./gcs/load.py) for more information.
 
 ```bash
 export PROJECT_ID=xxx-xxx-xxx
+export BUCKET_NAME=xxx-xxx-xxx-bucket
 python gcs/extract.py
 ```
 
